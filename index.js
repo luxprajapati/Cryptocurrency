@@ -10,7 +10,7 @@ const cors = require('cors');
 const expressError = require('./utils/ExpressError');
 const cryptoStatsRouter = require('./routers/cryptoStatsDeviation');
 const fetchCryptocurrencyData = require('./jobs/fetchCryptoData');
-cron.schedule('0 */1 * * * *', fetchCryptocurrencyData);
+cron.schedule('0 */2 * * *', fetchCryptocurrencyData);
 
 
 const DB_URL = process.env.MONGO_URI;
