@@ -12,3 +12,4 @@ router.route("/deviation")
     .get(cryptoDataController.deviation);
 
 module.exports = router;
+// Uppate
