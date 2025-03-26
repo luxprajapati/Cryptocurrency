@@ -4,7 +4,7 @@ const CryptoData = require('../models/cryptoData');
 // Function to fetch cryptocurrency data from the CoinGecko API
 const fetchCryptocurrencyData = async () => {
   try {
-    const coins = ['bitcoin', 'matic-network', 'ethereum'];
+    const coins = ['bitcoin', 'matic-network', 'ethereum','ripple','cardano','solana','polkadot','dogecoin','litecoin','binancecoin'];
     const { data } = await axios.get('https://api.coingecko.com/api/v3/simple/price', {
       params: {
         ids: coins.join(','),
